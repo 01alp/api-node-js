@@ -29,3 +29,8 @@ jobs:
         with:
           compose-file: ./docker-compose.yaml
           up-flags: -d
+
+      - name: Run Playwright API tests
+        run: |
+          echo "Running Playwright to execute API tests..."
+          npx playwright test
